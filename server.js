@@ -7,7 +7,7 @@ const PORT = Number(process.env.PORT || 3000);
 const PIN = process.env.APP_PIN || '2468';
 const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, 'data');
 const DATA_FILE = path.join(DATA_DIR, 'content.json');
-const PUBLIC_DIR = path.join(__dirname, 'public');
+const PUBLIC_DIR = __dirname;
 const sessions = new Map();
 
 const starter = {
